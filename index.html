@@ -4,7 +4,34 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
     <title>Katelyn &amp; Mark</title>
+
+    <link href='https://fonts.googleapis.com/css?family=Alegreya+Sans:100' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Playfair+Display+SC:700' rel='stylesheet' type='text/css'>
+
     <style media="screen">
+      html,body {
+        padding: 0;
+        margin: 0;
+      }
+      h1 {
+        text-align: center;
+        font-family: 'Alegreya Sans', sans-serif;
+        font-weight: 100;
+        font-size: 12vw;
+        color: white;
+        background-color: #FF8686;
+        text-transform: uppercase;
+        margin: 0;
+        padding: 10px 30px;
+        line-height: 1;
+        letter-spacing: -1px;
+      }
+      @media (min-width: 700px) {
+        h1 {
+          font-size: 8vw;
+          padding: 0 30px;
+        }
+      }
       .ground {
         position: fixed;
         bottom: -18vw;
@@ -21,10 +48,34 @@
         transform: rotate(-5deg);
         min-width: 70px;
       }
+      .amp {
+        font-family: 'Playfair Display SC', serif;
+        font-size: 4vw;
+        color: #BE6D6C;
+        line-height: 12vw;
+        display: inline-block;
+        vertical-align: top;
+      }
+      @media (min-width: 700px) {
+        .amp {
+          font-size: 3vw;
+          padding: 0 30px;
+        }
+      }
     </style>
   </head>
   <body>
+    <h1>Katelyn <span class="amp">&amp;</span> Mark</h1>
     <img src="birdus.svg" alt="" class="us" />
     <img src="ground.svg" alt="" class="ground" />
+
+    <!-- <form action="https://getsimpleform.com/messages?form_api_token=d5eace4db96bb9372794c77bd3c1f231" method="post"> -->
+      <!-- the redirect_to is optional, the form will redirect to the referrer on submission -->
+      <!-- <input type='hidden' name='redirect_to' value='<the complete return url e.g. http://fooey.com/thank-you.html>' /> -->
+      <!-- all your input fields here.... -->
+      <!-- <input type='text' name='test' />
+      <input type='submit' value='Test form' /> -->
+    <!-- </form> -->
+
   </body>
 </html>
