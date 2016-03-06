@@ -1,0 +1,197 @@
+html,body {
+  padding: 0;
+  margin: 0;
+  background: #FFFFFF;
+  min-height: 100%;
+}
+body {
+  padding-bottom: 10vw;
+  background: #FFFFFF;
+  background: -moz-linear-gradient(top,  #a9e6ff 0%, #ffffff 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  #a9e6ff 0%,#ffffff 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  #a9e6ff 0%,#ffffff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a9e6ff', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+}
+h1 {
+  text-align: center;
+  font-family: 'Alegreya Sans', sans-serif;
+  font-weight: 100;
+  font-size: 12vw;
+  color: white;
+  background-color: #FF8686;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 10px 30px;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+@media (min-width: 700px) {
+  h1 {
+    font-size: 8vw;
+    padding: 0 30px;
+  }
+}
+h2 {
+  margin-top: 2vh;
+  color: #FF8686;
+  text-align: center;
+  font-family: 'Lora', serif;
+  font-weight: 700;
+  font-size: 6vw;
+  text-shadow: 0 1px 0px white;
+}
+h2 sup {
+  font-size: 2vw;
+  text-transform: uppercase;
+}
+@media (min-width: 700px) {
+  h2 {
+    font-size: 4vw;
+  }
+}
+p {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 200;
+  font-size: 5vw;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5vh;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+}
+@media (min-width: 500px) {
+  p {
+    font-size: 4vw;
+    max-width: 500px;
+  }
+}
+@media (min-width: 700px) {
+  p {
+    font-size: 3vw;
+    max-width: 50%;
+  }
+}
+@media (min-width: 900px) {
+  p {
+    font-size: 2vw;
+  }
+}
+
+h3 {
+  margin-top: 3vh;
+  color: #FF8686;
+  text-align: center;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 200;
+  font-size: 4vw;
+}
+h3 a {
+  color: #525866;
+  display: inline-block;
+  text-decoration: none;
+  border-bottom: 1px solid #525866;
+  transition: all .2s linear;
+}
+h3 a:hover {
+  color: #FF8686;
+  border-bottom-color: transparent;
+}
+@media (min-width: 700px) {
+  h3 {
+    font-size: 2vw;
+  }
+}
+.ground {
+  position: fixed;
+  bottom: -6vw;
+  left: 0;
+  width: 100vw;
+  z-index: 3;
+}
+.us {
+  position: fixed;
+  bottom: 6.7vw;
+  left: 5vw;
+  z-index: 2;
+  width: 10vw;
+  transform: rotate(-3deg);
+  min-width: 70px;
+}
+.amp {
+  font-family: 'Amatic SC', cursive;
+  font-size: 4vw;
+  color: white;
+  line-height: 12vw;
+  display: inline-block;
+  vertical-align: top;
+}
+@media (min-width: 700px) {
+  .amp {
+    font-size: 3vw;
+    line-height: 8vw;
+  }
+}
+
+@keyframes FadeInOut {
+  0% {
+    opacity:1;
+  }
+  20% {
+    opacity:1;
+  }
+  33.33333333% {
+    opacity:0;
+  }
+  86.6667% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+.marklyn {
+  position: relative;
+  margin: 5vh auto 8vh;
+  min-width: 280px;
+  width: 50%;
+  max-width: 400px;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 0 8px 0 white;
+}
+
+.marklyn:after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+
+.marklyn .content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.marklyn img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border-radius: 50%;
+  animation-name: FadeInOut;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-duration: 15s;
+}
+
+.marklyn img:nth-of-type(1) {
+  animation-delay: 10s;
+}
+.marklyn img:nth-of-type(2) {
+  animation-delay: 5s;
+}
+.marklyn img:nth-of-type(3) {
+  animation-delay: 0;
+}
